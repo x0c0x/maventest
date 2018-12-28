@@ -71,9 +71,11 @@ pipeline {
             }
         }
 	    
-        stage('buid sd'
+	    stage('buid sd') {
+		    steps {
 	      build 'sd'
-
+		    }
+	    }
     }
 
 
