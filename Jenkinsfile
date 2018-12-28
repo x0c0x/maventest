@@ -46,11 +46,12 @@ pipeline {
 
             }
         }
-
+	
+	
         stage ('Building docker image') {
             steps {
                
-                    sh 'docker build -t dock .'
+                    sh 'docker build -t prabhin/new:testimage .'
                 
             }
         }
@@ -65,11 +66,13 @@ pipeline {
 	stage ('Pushing docker image to registry') {
             steps {
 
-                    sh 'docker push prabhin/dock'
+                    sh 'docker push prabhin/new'
 
             }
         }
-
+	    
+        stage('buid sd'
+	      build 'sd'
 
     }
 
