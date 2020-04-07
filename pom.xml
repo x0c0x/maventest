@@ -38,12 +38,12 @@
   <repository>
    <id>nexus</id>
    <name>maven-releases</name>
-   <url>http://qa4.kpisoft.com:8081/repository/maven-releases/</url>
+   <url>http://192.168.1.100:8081/repository/java-releases/</url>
   </repository>
   <snapshotRepository>
    <id>nexus</id>
    <name>maven-snapshots</name>
-   <url>http://qa4.kpisoft.com:8081/repository/maven-snapshots/</url>
+   <url>http://192.168.1.100:8081/repository/java-snapshots/</url>
   </snapshotRepository>
  </distributionManagement>
   
